@@ -20,11 +20,11 @@ e<!DOCTYPE html>
             font-family: 'Lato', Verdana, Helvetica, sans-serif;
             font-size: 22px;
             padding-left: 20px;
-            text-align: center;
         }
 
         h3 {
             padding-left: 40px;
+            text-align: center;
         }
 
         .container {
@@ -32,7 +32,14 @@ e<!DOCTYPE html>
             margin-right: 600px;
         }
         
+        .video-pair {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        
         .video-container {
+            flex: 0 0 48%; /* Adjust the percentage as needed */
             position: relative;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
@@ -91,69 +98,79 @@ e<!DOCTYPE html>
             <h2>Samples</h2>
             <div>
                 <h3>Continuation</h3>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="video-pair">
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
                 <h3>Interpolation</h3>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="video-pair">
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
                 <h3>Audio to Video</h3>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="video-pair">
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
                 <h3>Video to Audio</h3>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="video-pair">
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
                 <h3>Frame + Audio to Video</h3>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video class="video" controls>
-                        <source src="test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="video-pair">
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <video class="video" controls>
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
             </div>
         </section>
