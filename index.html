@@ -13,7 +13,12 @@
             margin-left: 600px;
             margin-right: 600px;
         }
-
+        
+        .video-container {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
         h1 {
             font-family: 'Lato', Verdana, Helvetica, sans-serif;
             font-size: 32px;
@@ -24,6 +29,7 @@
             font-family: 'Lato', Verdana, Helvetica, sans-serif;
             font-size: 22px;
             padding-left: 20px;
+            text-align: center;
         }
 
         h3 {
@@ -35,11 +41,35 @@
             border-radius: 15px; 
             overflow: hidden; 
         }
+
+        .buttons {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .button {
+            background-color: darkgrey;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .button:hover {
+            background-color: grey;
+        }
+        
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="name">Mixture of Diffusion Timesteps for Multimodal Generation</h1>
+        <div class="buttons">
+            <a href="link-to-paper" class="button">Paper</a>
+            <a href="link-to-arxiv" class="button">ArXiv</a>
+        </div>
         <section>
             <h2>Abstract</h2>
             <p>We present a diffusion framework that can learn a wide range of conditional distributions within multimodal data using a single model. Our key contribution lies in how we parameterize the diffusion timestep in the forward diffusion process. Instead of the canonical fixed diffusion timestep, we propose applying variable timesteps across the temporal dimension and across modalities of the inputs. This formulation offers flexibility to introduce variable noise levels for various portions of the input by using a mixture of diffusion timesteps during training, enabling a single diffusion model to learn arbitrary conditional distributions. We implement this method for multimodal video generation by developing a transformer-based audiovisual latent diffusion model. Extensive experiments demonstrate that our approach can tackle a variety of crossmodal and multimodal interpolation tasks. In particular, our approach surpasses other baselines at generating samples that are temporally and perceptually consistent with the conditioning input.</p>
@@ -48,50 +78,70 @@
             <h2>Samples</h2>
             <div>
                 <h3>Continuation</h3>
-                <video class="video" width="320" height="240" controls>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
-                <video class="video" width="320" height="240" controls>
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                    </video>
+                </div>
                 <h3>Interpolation</h3>
-                <video class="video" width="320" height="240" controls>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
-                <video class="video" width="320" height="240" controls>
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                    </video>
+                </div>
                 <h3>Audio to Video</h3>
-                <video class="video" width="320" height="240" controls>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
-                <video class="video" width="320" height="240" controls>
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                    </video>
+                </div>
                 <h3>Video to Audio</h3>
-                <video class="video" width="320" height="240" controls>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
-                <video class="video" width="320" height="240" controls>
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                    </video>
+                </div>
                 <h3>Frame + Audio to Video</h3>
-                <video class="video" width="320" height="240" controls>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
-                <video class="video" width="320" height="240" controls>
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video class="video" width="320" height="240" controls>
                     <source src="test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                    </video>
+                </div>
             </div>
         </section>
     </div>
