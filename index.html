@@ -30,6 +30,13 @@
         .container {
             margin-left: 600px;
             margin-right: 600px;
+            width: 320px; /* Fixed width for larger screens */
+            height: 240px;
+        }
+
+        .content {
+            font-size: 16px; /* Larger font size for larger screens */
+            /* Other styling... */
         }
         
         .video-pair {
@@ -80,6 +87,18 @@
         
         section {
             margin-bottom: 20px; /* Adjust this value as needed for more or less spacing */
+        }
+
+        @media (max-width: 600px) {
+            .video-container {
+                width: 100%; /* Full width on smaller screens */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            .content {
+                font-size: 14px; /* Smaller font size for smaller screens */
+                /* Other adjusted styling... */
+            }
         }
         
     </style>
