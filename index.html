@@ -28,10 +28,10 @@
         }
 
         .container {
-            margin-left: 600px;
-            margin-right: 600px;
-            width: 320px; /* Fixed width for larger screens */
-            height: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80% /* Fixed width for larger screens */
+            height: 960px;
         }
 
         .content {
@@ -90,14 +90,12 @@
         }
 
         @media (max-width: 600px) {
-            .video-container {
-                width: 100%; /* Full width on smaller screens */
-                height: auto; /* Maintain aspect ratio */
+            .container {
+                width: 95%; /* More width on smaller screens */
             }
-
-            .content {
-                font-size: 14px; /* Smaller font size for smaller screens */
-                /* Other adjusted styling... */
+            
+            .video-container {
+                flex: 0 0 100%; /* Each video takes full width on smaller screens */
             }
         }
         
