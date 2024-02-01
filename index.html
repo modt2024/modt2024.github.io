@@ -3,10 +3,23 @@
 <head>
     <title>Mixture of Diffusion Timesteps for Multimodal Generation</title>
     <style>
-        body { font-family: 'Open Sans', sans-serif; background-color: #f5f5f5; color: #333; }
-        h1, h2 { font-family: 'Merriweather', serif; color: #003366; }
-        .container { width: 80%; margin: auto; }
-        .video { margin-bottom: 20px; }
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            background-color: #f5f5f5; 
+            color: #333; 
+            text-align: center; 
+        }
+        h1, h2 { 
+            font-family: 'Merriweather', serif; 
+            color: #003366; 
+        }
+        .container { 
+            width: 80%; 
+            margin: auto; 
+        }
+        .video { 
+            margin-bottom: 20px; 
+        }
         @media (max-width: 768px) {
             .container { width: 95%; }
             .video { width: 100%; }
@@ -15,8 +28,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Your Title Here</h1>
-        <p>Abstract: [Your abstract here]</p>
+        <h1>Mixture of Diffusion Timesteps for Multimodal Generation</h1>
+        <section>
+            <h2>Abstract</h2>
+            <p>We present a diffusion framework that can learn a wide range of conditional distributions within multimodal data using a single model. Our key contribution lies in how we parameterize the diffusion timestep in the forward diffusion process. Instead of the canonical fixed diffusion timestep, we propose applying variable timesteps across the temporal dimension and across modalities of the inputs. This formulation offers flexibility to introduce variable noise levels for various portions of the input by using a mixture of diffusion timesteps during training, enabling a single diffusion model to learn arbitrary conditional distributions. We implement this method for multimodal video generation by developing a transformer-based audiovisual latent diffusion model. Extensive experiments demonstrate that our approach can tackle a variety of crossmodal and multimodal interpolation tasks. In particular, our approach surpasses other baselines at generating samples that are temporally and perceptually consistent with the conditioning input.</p>
+        </section>
         <section>
             <h2>Sample Section</h2>
             <div>
