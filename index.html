@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mixture of Diffusion Timesteps for Multimodal Generation</title>
     <style>
-        body, td, th, tr, p, a {
+        body, td, th, tr, p {
             font-family: 'Lato', Verdana, Helvetica, sans-serif;
             font-size: 14px;
         }
@@ -24,8 +24,15 @@
             padding-left: 20px;
             margin-top: 0px;
         }
-
-        h3 {
+        
+        a {
+            font-weight: normal;
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 18px;
+            padding-left: 30px;
+            margin-top: 0px;
+        }
+        subtitle {
             font-weight: normal;
             font-size: 15px;
             font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -114,7 +121,7 @@
 <body>
     <div class="container">
         <h1 class="name">Mixture of Diffusion Timesteps for Multimodal Generation</h1>
-        <h3 class="name">Anonymous submission to ICML'24</h3>
+        <subtitle class="name">Anonymous submission to ICML'24</subtitle>
         <section>
         <div class="video-container">
             <video class="video" controls>
@@ -126,6 +133,23 @@
         <section>
             <h2>Abstract</h2>
             <p>We present a diffusion framework that can learn a wide range of conditional distributions within multimodal data using a single model. Our key contribution lies in how we parameterize the diffusion timestep in the forward diffusion process. Instead of the canonical fixed diffusion timestep, we propose applying variable timesteps across the temporal dimension and across modalities of the inputs. This formulation offers flexibility to introduce variable noise levels for various portions of the input by using a mixture of diffusion timesteps during training, enabling a single diffusion model to learn arbitrary conditional distributions. We implement this method for multimodal video generation by developing a transformer-based audiovisual latent diffusion model. Extensive experiments demonstrate that our approach can tackle a variety of crossmodal and multimodal interpolation tasks. In particular, our approach surpasses other baselines at generating samples that are temporally and perceptually consistent with the conditioning input.</p>
+        </section>
+        <section>
+            <h2>Additional examples</h2>
+            <a href="https://google.github.io/aistplusplus_dataset/">AIST++</a>
+            <div class="video-container">
+                <video class="video" controls>
+                    <source src="AV-LDM_DEMO.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <a href="https://opendatalab.com/OpenDataLab/High_Fidelity_Audio-Video_Landscape_Dataset">Landscape</a>
+            <div class="video-container">
+                <video class="video" controls>
+                    <source src="AV-LDM_DEMO.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
     </div>
 </body>
