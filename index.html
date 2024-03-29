@@ -40,7 +40,7 @@
             padding-left: 45px;
             margin-top: 0px;
         }
-        b { 
+        b1 { 
   font-size: inherit;  /* Inherit font size from parent element */ 
 }
         p{
@@ -180,11 +180,19 @@
         </section>
     <section>
         <h2>Comparison with MM-Diffusion</h2>
-        <p>We compare our proposed approach side by side to a few results from the AIST++ dataset for <b href="https://github.com/researchmm/MM-Diffusion/tree/main">MM-Diffusion</b> (Ruan et. al, CVPR 2023) for various audiovisual generative tasks. </p>
+        <p>We compare our proposed approach side by side to a few results from the AIST++ dataset for <a1 href="https://github.com/researchmm/MM-Diffusion/tree/main">MM-Diffusion</a1> (Ruan et. al, CVPR 2023) for various audiovisual generative tasks. </p>
         <p>N.B: We are comparing the generative video results at 128x128 resolution with super-resolution videos from MM-Diffusion</p>
-        <h3>Audio-video continuation: Continue 2 seconds of AV given one frame</h3>
+        <h3><b>Audio-video continuation: Continue 2 seconds of AV given one frame</b></h3>
           <table>
     <tr>
+      <td>
+        <b>Ours</b>
+      </td>
+      <td>
+        <b>MM-Diffusion</b>
+      </td>
+    </tr>
+              <tr>
       <td>
         <video width="256" height="256" controls>
           <source src="AIST.mp4" type="video/mp4">
