@@ -174,7 +174,7 @@
             <h2>Comparison with MM-Diffusion</h2>
             <p>We compare our proposed approach side by side to a few results from the AIST++ dataset for MM-Diffusion (Ruan et. al, CVPR 2023) for various audiovisual generative tasks. </p>
             <p>N.B: We are comparing the generative video results at 128x128 resolution with super-resolution videos from MM-Diffusion</p>
-            <h3><b>Audio-video continuation: Continue 2 seconds of AV given one frame</b></h3>
+            <h3><b>Continuation Task - Given first frame of audio and video, generate audio + video </b></h3>
             <table>
                 <tr>
                     <td><h3><b>Ours</b></h3></td>
@@ -182,7 +182,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Conti_M3_01.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -190,7 +190,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Conti_MMD_01.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -201,7 +201,7 @@
 
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Conti_M3_02.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -209,7 +209,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Conti_MMD_02.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -220,7 +220,7 @@
 
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Conti_M3_03.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -228,7 +228,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Conti_MMD_03.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -236,16 +236,32 @@
                         </div>
                     </td>
                 </tr>
-            </table>
-            <h3><b>Video-to-Audio: Generate Audio given vudei input</b></h3>
-            <table>
-                <tr>
-                    <td><h3><b>Ours</b></h3></td>
-                    <td><h3><b>MM-Diffusion</b></h3></td>
-                </tr>
+
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
+                            <video class="video" controls>
+                                <source src="Conti_M3_04.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="small-video-container">
+                            <video class="video" controls>
+                                <source src="Conti_MMD_04.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            <h3><b>Video-to-Audio: Generate Audio given video input</b></h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="V2A_M3_01.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -253,7 +269,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="V2A_MMD_01.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -264,7 +280,7 @@
 
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="V2A_M3_02.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -272,7 +288,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="V2A_MMD_02.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -283,7 +299,7 @@
 
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="V2A_M3_03.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -291,7 +307,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="V2A_MMD_03.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -299,6 +315,27 @@
                         </div>
                     </td>
                 </tr>
+
+                <tr>
+                    <td>
+                        <div class="small-video-container">
+                            <video class="video" controls>
+                                <source src="V2A_M3_04.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="small-video-container">
+                            <video class="video" controls>
+                                <source src="V2A_MMD_04.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
             <h3><b>Audio-to-Video: Generate Video given audio input</b></h3>
             <table>
                 <tr>
@@ -307,7 +344,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="A2V_M3_01.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -315,7 +352,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="A2V_MMD_01.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -326,7 +363,7 @@
 
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="A2V_M3_02.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -334,7 +371,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="A2V_MMD_02.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -345,7 +382,7 @@
 
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="A2V_M3_03.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -353,7 +390,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="A2V_MMD_03.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -361,6 +398,27 @@
                         </div>
                     </td>
                 </tr>
+
+                <tr>
+                    <td>
+                        <div class="small-video-container">
+                            <video class="video" controls>
+                                <source src="A2V_M3_04.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="small-video-container">
+                            <video class="video" controls>
+                                <source src="A2V_MMD_04.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </td>
+                </tr>
+            </table>  
+            
             <h3><b>Unconditional: Given no inputs (only noise), generate audio + video
             <table>
                 <tr>
@@ -369,7 +427,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Uncond_M3_01.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -377,7 +435,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Uncond_MMD_01.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -388,7 +446,7 @@
 
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Uncond_M3_02.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -396,7 +454,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Uncond_MMD_02.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -407,7 +465,7 @@
 
                 <tr>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Uncond_M3_03.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -415,9 +473,28 @@
                         </div>
                     </td>
                     <td>
-                        <div class="video-container">
+                        <div class="small-video-container">
                             <video class="video" controls>
                                 <source src="Uncond_MMD_03.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="small-video-container">
+                            <video class="video" controls>
+                                <source src="Uncond_M3_04.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="small-video-container">
+                            <video class="video" controls>
+                                <source src="Uncond_MMD_04.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
