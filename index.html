@@ -126,7 +126,20 @@
                 flex: 0 0 100%; /* Each video takes full width on smaller screens */
             }
         }
-        
+  table {
+    width: 100%; /* Adjust width as needed */
+    border-collapse: collapse; 
+  }
+
+  td {
+    width: 50%;  /* Each cell takes 50% of the table width */
+    padding: 15px;
+  }
+
+  video {
+    width: 100%; /* Make videos fill the cell  */
+    max-height: 300px; /* Adjust maximum height if needed */
+  }
     </style>
 </head>
 <body>
@@ -167,6 +180,24 @@
         <h2>Comparison with MM-Diffusion</h2>
         <p>We compare our proposed approach side by side to results from <a href="https://github.com/researchmm/MM-Diffusion/tree/main">MM-Diffusion</a> for various audiovisual generative tasks. </p>
         <p>N.B: We are comparing the generative video results at 128x128 resolution with super-resolution videos from MM-Diffusion</p>
+
+          <table>
+    <tr>
+      <td>
+        <video width="256" height="256" controls>
+          <source src="AIST.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </td>
+      <td>
+        <video width="256" height="256" controls>
+          <source src="Landscape.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </td>
+    </tr>
+  </table>
+        
     </section>
     </div>
 </body>
